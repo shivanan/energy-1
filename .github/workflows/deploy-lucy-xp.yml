@@ -2,7 +2,7 @@ name: deploy-lucy-xp
 on:
   push:
     branches:
-      - master # Change this to your default branch
+      - main # Change this to your default branch
 jobs:
   deploy-lucy-xp:
     name: deploy-lucy-xp
