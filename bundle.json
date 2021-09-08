@@ -1,0 +1,22 @@
+{
+    "id": "f2cffc40-efcd-4546-8be7-c3be9117af15",
+    "author": "eutech",
+    "widgets": [
+        {
+            "id": "energy_1",
+            "name": "energy_1",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+    ],
+    "sidebarLinks": [
+        
+    ],
+    "uis": [
+       
+    ],
+    "menuItems": [
+        
+    ]
+}
