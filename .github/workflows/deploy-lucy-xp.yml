@@ -1,0 +1,28 @@
+name: deploy-lucy-xp
+on:
+  push:
+    branches:
+      - master # Change this to your default branch
+jobs:
+  deploy-lucy-xp:
+    name: deploy-lucy-xp
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@master
+    - name: Set up Node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: 15
+    - name: Install
+      run: npm install
+    - name: GitHub Action for npx
+      uses: mikeal/npx@1.0.0
+    - run: npx webpack --mode production
+    - name: GitHub Action for npx
+      uses: mikeal/npx@1.0.0
+    - run: npx lucy-xp@latest upload dist/main.js bundle.json --lucy-url "https://hs1.v4.iviva.cloud" --lucy-apikey "SC:hs1:7efa416bf7a586ce"
+    - name: GitHub Action for npx
+      uses: mikeal/npx@1.0.0
+    - run: npx lucy-xp@latest upload-models --lucy-url "https://hs1.v4.iviva.cloud" --lucy-apikey "SC:hs1:7efa416bf7a586ce"
+ 
