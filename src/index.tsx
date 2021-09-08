@@ -18,7 +18,7 @@ const Energy_1Widget: React.FunctionComponent<IWidgetProps> = (props) => {
     return (
         <WidgetWrapper className={'energy-widget'}>
             <div style={{ flex:1,display: 'flex', flexDirection: 'column', alignItems: 'center',justifyContent:'center' }}>
-            <div className='title'>Current Consumption</div>
+            <div className='title'>Current Energy Consumption</div>
             <div className='value'>{`${value} kwH`}</div>
             </div>
         </WidgetWrapper>

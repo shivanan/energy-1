@@ -10347,7 +10347,7 @@ const Energy_1Widget = (props) => {
     }, []);
     return (React.createElement(components_1.WidgetWrapper, { className: 'energy-widget' },
         React.createElement("div", { style: { flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' } },
-            React.createElement("div", { className: 'title' }, "Current Consumption"),
+            React.createElement("div", { className: 'title' }, "Current Energy Consumption"),
             React.createElement("div", { className: 'value' }, `${value} kwH`))));
 };
 /**
